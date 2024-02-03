@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Event Registration</h2>
+        <form id="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="selfie">Selfie:</label>
+            <input type="file" id="selfie" name="selfie" accept="image/*" capture="user" required>
+
+            <img id="preview" src="#" alt="Selfie Preview" style="display: none;">
+
+            <!-- <label for="selfie">Selfie:</label>
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            <video id="selfie" autoplay playsinline style="display: none;"></video>
+            <img id="selfiePreview" alt="Selfie Preview" style="display: none;">
+            <div id="buttonContainer" style="display: none;">
+                <button id="captureButton">Capture</button>
+                <button id="retakeButton">Retake</button>
+            </div>
+            <button id="uploadButton">Upload Selfie</button> -->
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
